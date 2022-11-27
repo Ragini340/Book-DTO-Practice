@@ -1,0 +1,31 @@
+﻿<div class="jumbotron">
+    <h1>Creating Data Transfer Objects</h1>
+    <p class="lead">A DTO is an object that defines how the data will be sent over the network.</p>
+ </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Brief Description</h2>
+        <p>The BookDetailDTO class includes all of the properties from the BookModel model, except that AuthorName is a string that will hold the author name. The BookDTO class contains a subset of properties from BookDetailDTO.</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Overview</h2>
+        <p>In this project, I am converting to DTOs manually in code. .</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Purpose</h2>
+        <p>My web API exposes the database entities to the client. The client receives data that maps directly to my database tables. However, that's not always a good idea. Sometimes we want to change the shape of the data that we send to client. For example, we might want to:
+
+            -->Remove circular references.
+            -->Hide particular properties that clients are not supposed to view.
+            -->Omit some properties in order to reduce payload size.
+            -->Flatten object graphs that contain nested objects, to make them more convenient for clients.
+            -->Avoid "over-posting" vulnerabilities.
+            -->Decouple our service layer from your database layer.
+
+            To accomplish this, we can define a data transfer object (DTO).</p>
+    </div>
+
+</div>
